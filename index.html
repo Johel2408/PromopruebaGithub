@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Promoción de Prueba</title>
+  <title>Promoción de Prueba 02</title>
 
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -101,11 +101,11 @@
     <video id="video14" src="videos/alumno14.mp4" loop playsinline></video>
     <video id="video15" src="videos/alumno15.mp4" loop playsinline></video>
 
-    <!-- ESPECIALES 
+    <!-- ESPECIALES -->
     <video id="videoProfesor" src="videos/profesor.mp4" loop playsinline></video>
     <video id="videoGrupal01" src="videos/grupal01.mp4" loop playsinline></video>
     <video id="videoGrupal02" src="videos/grupal02.mp4" loop playsinline></video>
-    <video id="videoGrupal03" src="videos/grupal03.mp4" loop playsinline></video> -->
+    <video id="videoGrupal03" src="videos/grupal03.mp4" loop playsinline></video> 
 
     <!-- ================= AUDIOS ================= -->
     <audio id="audio01" src="audios/alumno01.mp3"></audio>
@@ -207,6 +207,26 @@
     <a-video src="#video15" width="1" height="1.57" material="shader: flat"></a-video>
   </a-entity> 
 
+  <!-- PROFESOR -->
+  <a-entity mindar-image-target="targetIndex: 15" data-video="videoProfesor" data-audio="audioProfesor">
+    <a-video src="#videoProfesor" width="1" height="1.57" material="shader: flat"></a-video>
+  </a-entity> 
+
+  <!-- GRUPAL01 -->
+  <a-entity mindar-image-target="targetIndex: 16" data-video="videoGrupal01" data-audio="audioGrupal01">
+    <a-video src="#videoGrupal01" width="1" height="1.57" material="shader: flat"></a-video>
+  </a-entity> 
+
+  <!-- GRUPAL02 -->
+  <a-entity mindar-image-target="targetIndex: 17" data-video="videoGrupal02" data-audio="audioGrupal02">
+    <a-video src="#videoGrupal02" width="1" height="1.57" material="shader: flat"></a-video>
+  </a-entity> 
+
+  <!-- GRUPAL03 -->
+  <a-entity mindar-image-target="targetIndex: 17" data-video="videoGrupal03" data-audio="audioGrupal03">
+    <a-video src="#videoGrupal03" width="1" height="1.57" material="shader: flat"></a-video>
+  </a-entity>
+
   <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 </a-scene>
 
@@ -243,4 +263,5 @@
 
 </body>
 </html>
+
 
