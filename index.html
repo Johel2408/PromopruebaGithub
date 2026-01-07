@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Promoción AR</title>
+  <title>Promoción de Prueba</title>
 
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
@@ -229,7 +229,7 @@
       if (!audioUnlocked) return;
       video.play().catch(() => {});
       audio.currentTime = 0;
-      audio.play().catch(() => {});
+      //audio.play().catch(() => {});
     });
 
     target.addEventListener('targetLost', () => {
@@ -243,3 +243,4 @@
 
 </body>
 </html>
+
